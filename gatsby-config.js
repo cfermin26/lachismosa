@@ -30,12 +30,5 @@ module.exports = {
         defaultQuality: 100,
       },
     },
-    {
-      resolve: `gatsby-plugin-google-fonts`,
-      options: {
-        fonts: [`Lato`, `Baloo Bhaina 2\:100,400,700`],
-        display: "swap",
-      },
-    },
   ],
 };

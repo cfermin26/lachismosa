@@ -1,0 +1,490 @@
+@font-face {
+  font-display: swap;
+  font-family: "Breathing";
+  src: url("fonts/Breathing.ttf");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "BalooBhainaOdia";
+  src: url("fonts/BalooBhainaOdia-Regular.ttf");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "ProximaNova-Light";
+  src: url("fonts/ProximaNova-Light.otf");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "ProximaNova-Regular";
+  src: url("fonts/ProximaNova-Regular.ttf");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "ProximaNova-Bold";
+  src: url("fonts/ProximaNova-Bold.otf");
+}
+
+.navbar-dark {
+  background-color: #333333;
+  color: #ffffff;
+}
+.navbar-dark .nav-link {
+  color: #ffffff !important;
+  font-family: "BalooBhainaOdia";
+  font-size: 16px;
+  font-weight: 400;
+  margin: 2px 12px;
+}
+.navbar-dark .nav-link:hover {
+  color: #e4232d !important;
+}
+
+.navbar-dark .active {
+  border-bottom: 2px solid #e4232d !important;
+  color: #e4232d !important;
+}
+
+#basic-navbar-nav a {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+}
+
+#basic-navbar-nav a::after {
+  background: red;
+  content: "";
+  height: 2px;
+  left: 0;
+  position: absolute;
+  top: 100%;
+  transform: scaleX(0);
+  transition: transform 0.35s ease;
+  width: 100%;
+}
+
+#basic-navbar-nav a:hover::after {
+  transform: scaleX(1);
+}
+
+.logo-light {
+  width: 90px;
+}
+
+.content-banner-home {
+  margin-left: 0;
+  margin-top: -8%;
+  width: 35%;
+}
+
+.texto-banner-home {
+  font-family: "ProximaNova-Bold";
+  font-size: 26px;
+  line-height: 1.2;
+  margin-left: 17%;
+  margin-top: 3%;
+}
+
+.content-banner {
+  margin-left: 5%;
+}
+
+.titulo-banner {
+  font-family: "BalooBhainaOdia";
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.texto-banner {
+  font-family: "ProximaNova-Bold";
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.titulo-lachismosa {
+  font-family: "Breathing";
+  font-size: 50px;
+}
+
+.texto-lachismosa {
+  font-family: "ProximaNova-Light";
+  font-size: 18px;
+}
+
+.frecuencia-contacto {
+  font-family: "ProximaNova-Bold";
+  font-size: 21px;
+}
+
+.background-2 {
+  background-attachment: fixed;
+  background-color: #000000;
+  background-image: url("images/assets/background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.btn-destacado {
+  background-color: #000000;
+  border-radius: 30px;
+  border: 0;
+  font-family: "BalooBhainaOdia";
+  font-size: 26px;
+  font-weight: 400;
+}
+
+/* Programacion */
+.titulo-programacion {
+  font-family: "ProximaNova-Light";
+  font-size: 14px;
+}
+
+.fecha-programacion {
+  background-color: #000000;
+  border-radius: 6px;
+  color: #ffffff;
+  max-width: 200px;
+  padding: 10px 12px;
+}
+
+.dia-programacion {
+  font-family: "ProximaNova-Bold";
+  margin-bottom: 0;
+}
+
+.hora-programacion {
+  font-family: "ProximaNova-Light";
+  line-height: 1.1;
+  margin-bottom: 0;
+}
+
+/*** Contacto ***/
+.texto-contacto {
+  font-family: "ProximaNova-Light";
+  font-size: 18px;
+}
+
+/*** Footer ***/
+
+footer {
+  background-color: #000000;
+  font-family: "ProximaNova-Light";
+}
+
+.social-footer {
+  list-style: none;
+  margin-bottom: 0;
+}
+
+.social-footer img {
+  width: 35px;
+}
+
+.contacto-footer {
+  font-family: "ProximaNova-Light";
+  font-size: 14px;
+  list-style: none;
+  margin-bottom: 0;
+}
+
+.contacto-footer li {
+  color: #ffffff;
+  margin-top: 10px;
+}
+
+.contacto-footer img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.contacto-info {
+  font-family: "ProximaNova-Light";
+  font-size: 18px;
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.contacto-info img {
+  width: 20px;
+  margin-right: 10px;
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
+}
+
+.contacto-social {
+  font-family: "ProximaNova-Light";
+  font-size: 18px;
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.contacto-social li {
+  line-height: 2;
+}
+
+.contacto-social img {
+  width: 40px;
+  margin-right: 10px;
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
+}
+
+.contacto-bold {
+  font-family: "ProximaNova-Bold";
+}
+
+.logo-footer {
+  width: 140px;
+}
+
+/**** Carrera ****/
+.titulo-carrera {
+  font-family: "ProximaNova-Bold";
+  font-size: 50px;
+}
+
+.subtitulo-carrera {
+  font-family: "ProximaNova-Bold";
+  font-size: 21px;
+}
+
+.carrera-bold {
+  font-family: "ProximaNova-Bold";
+}
+
+.texto-carrera {
+  font-family: "ProximaNova-Regular";
+  font-size: 24px;
+}
+
+.titulo-carrera-md {
+  font-family: "ProximaNova-Bold";
+  font-size: 36px;
+}
+
+.lista-carrera li {
+  line-height: 1.1;
+  margin-top: 18px;
+}
+
+.cont-inscripcion {
+  background-color: #d90203;
+  border-radius: 20px;
+  max-width: 500px;
+  width: 500px;
+}
+
+.titulo-inscripcion {
+  font-family: "ProximaNova-Bold";
+  font-size: 32px;
+}
+
+.valor-inscripcion {
+  font-family: "ProximaNova-Bold";
+  font-size: 18px;
+}
+
+.btn-inscripcion {
+  background-color: #ffffff;
+  border-radius: 30px;
+  border: 0;
+  color: #d90203;
+  font-family: "BalooBhainaOdia";
+  font-size: 21px;
+  font-weight: 400;
+}
+
+.titulo-premio {
+  font-family: "ProximaNova-Bold";
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.bg-reglas {
+  background-color: #d90203;
+}
+
+.titulo-reglas {
+  font-family: "ProximaNova-Bold";
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.br-light {
+  border-right: 1px solid #ffffff;
+}
+
+@media (max-width: 575.98px) {
+  .navbar-dark .active {
+    border-bottom: none !important;
+    color: #e4232d !important;
+  }
+
+  .logo-light {
+    margin-left: 20px;
+  }
+
+  .content-banner-home {
+    width: 45%;
+    margin-left: 0;
+  }
+
+  .texto-banner-home {
+    font-size: 14px;
+    margin-top: 5%;
+    margin-bottom: 0;
+  }
+
+  .content-banner {
+    margin-left: 0;
+  }
+
+  .titulo-banner {
+    font-size: 26px;
+  }
+
+  .texto-banner {
+    font-size: 14px;
+  }
+
+  .titulo-lachismosa {
+    font-size: 28px;
+  }
+
+  .texto-lachismosa {
+    font-size: 14px;
+  }
+
+  .frecuencia-contacto {
+    font-size: 14px;
+  }
+
+  .titulo-envivo {
+    color: #e4232d;
+  }
+
+  .titulo-programacion {
+    font-size: 14px;
+  }
+
+  .dia-programacion {
+    font-size: 14px;
+  }
+
+  .hora-programacion {
+    font-size: 14px;
+  }
+
+  /*** Contacto ***/
+  .texto-contacto {
+    font-size: 14px;
+  }
+
+  /*** Footer ***/
+  .social-footer {
+    list-style: none;
+    margin-bottom: 0;
+  }
+
+  .social-footer img {
+    width: 35px;
+  }
+
+  .contacto-info {
+    font-size: 14px;
+  }
+
+  .contacto-info li {
+    line-height: 2;
+  }
+
+  .contacto-info img {
+    width: 20px;
+  }
+
+  .contacto-social {
+    font-size: 14px;
+  }
+
+  .contacto-social li {
+    line-height: 2;
+  }
+
+  .contacto-social img {
+    width: 25px;
+  }
+
+  .logo-footer {
+    width: 130px;
+  }
+
+  /**** Carrera ****/
+  .titulo-carrera {
+    font-size: 30px;
+  }
+
+  .subtitulo-carrera {
+    font-size: 18px;
+  }
+
+  .texto-carrera {
+    font-size: 16px;
+  }
+
+  .titulo-carrera-md {
+    font-size: 28px;
+    line-height: 1;
+  }
+
+  .lista-carrera {
+    padding-left: 0;
+  }
+
+  .lista-carrera li {
+    line-height: 1.1;
+    margin-top: 16px;
+  }
+
+  .titulo-inscripcion {
+    font-size: 30px;
+  }
+
+  .valor-inscripcion {
+    font-size: 16px;
+  }
+
+  .btn-inscripcion {
+    background-color: #ffffff;
+    border-radius: 30px;
+    border: 0;
+    color: #d90203;
+    font-size: 18px;
+  }
+
+  .titulo-premio {
+    font-family: "ProximaNova-Bold";
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  .bg-reglas {
+    background-color: #d90203;
+  }
+
+  .titulo-reglas {
+    font-family: "ProximaNova-Bold";
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  .br-light {
+    border-right: 0;
+  }
+}

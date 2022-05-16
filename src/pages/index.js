@@ -1,184 +1,213 @@
-import * as React from "react"
+import * as React from "react";
+import { StaticImage } from "gatsby-plugin-image";
+import Layout from "../components/Layout";
+import Helmet from "react-helmet";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Card from "react-bootstrap/Card";
+import Button from "react-bootstrap/Button";
 
-// styles
-const pageStyles = {
-  color: "#232129",
-  padding: 96,
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-}
-const headingAccentStyles = {
-  color: "#663399",
-}
-const paragraphStyles = {
-  marginBottom: 48,
-}
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-}
-const listStyles = {
-  marginBottom: 96,
-  paddingLeft: 0,
-}
-const listItemStyles = {
-  fontWeight: 300,
-  fontSize: 24,
-  maxWidth: 560,
-  marginBottom: 30,
-}
-
-const linkStyle = {
-  color: "#8954A8",
-  fontWeight: "bold",
-  fontSize: 16,
-  verticalAlign: "5%",
-}
-
-const docLinkStyle = {
-  ...linkStyle,
-  listStyleType: "none",
-  marginBottom: 24,
-}
-
-const descriptionStyle = {
-  color: "#232129",
-  fontSize: 14,
-  marginTop: 10,
-  marginBottom: 0,
-  lineHeight: 1.25,
-}
-
-const docLink = {
-  text: "Documentation",
-  url: "https://www.gatsbyjs.com/docs/",
-  color: "#8954A8",
-}
-
-const badgeStyle = {
-  color: "#fff",
-  backgroundColor: "#088413",
-  border: "1px solid #088413",
-  fontSize: 11,
-  fontWeight: "bold",
-  letterSpacing: 1,
-  borderRadius: 4,
-  padding: "4px 6px",
-  display: "inline-block",
-  position: "relative",
-  top: -2,
-  marginLeft: 10,
-  lineHeight: 1,
-}
-
-// data
-const links = [
-  {
-    text: "Tutorial",
-    url: "https://www.gatsbyjs.com/docs/tutorial/",
-    description:
-      "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
-    color: "#E95800",
-  },
-  {
-    text: "How to Guides",
-    url: "https://www.gatsbyjs.com/docs/how-to/",
-    description:
-      "Practical step-by-step guides to help you achieve a specific goal. Most useful when you're trying to get something done.",
-    color: "#1099A8",
-  },
-  {
-    text: "Reference Guides",
-    url: "https://www.gatsbyjs.com/docs/reference/",
-    description:
-      "Nitty-gritty technical descriptions of how Gatsby works. Most useful when you need detailed information about Gatsby's APIs.",
-    color: "#BC027F",
-  },
-  {
-    text: "Conceptual Guides",
-    url: "https://www.gatsbyjs.com/docs/conceptual/",
-    description:
-      "Big-picture explanations of higher-level Gatsby concepts. Most useful for building understanding of a particular topic.",
-    color: "#0D96F2",
-  },
-  {
-    text: "Plugin Library",
-    url: "https://www.gatsbyjs.com/plugins",
-    description:
-      "Add functionality and customize your Gatsby site or app with thousands of plugins built by our amazing developer community.",
-    color: "#8EB814",
-  },
-  {
-    text: "Build and Host",
-    url: "https://www.gatsbyjs.com/cloud",
-    badge: true,
-    description:
-      "Now you’re ready to show the world! Give your Gatsby site superpowers: Build and host on Gatsby Cloud. Get started for free!",
-    color: "#663399",
-  },
-]
-
-// markup
 const IndexPage = () => {
   return (
-    <main style={pageStyles}>
-      <title>Home Page</title>
-      <h1 style={headingStyles}>
-        Congratulations
-        <br />
-        <span style={headingAccentStyles}>— you just made a Gatsby site! </span>
-        <span role="img" aria-label="Party popper emojis">
-          🎉🎉🎉
-        </span>
-      </h1>
-      <p style={paragraphStyles}>
-        Edit <code style={codeStyles}>src/pages/index.js</code> to see this page
-        update in real-time.{" "}
-        <span role="img" aria-label="Sunglasses smiley emoji">
-          😎
-        </span>
-      </p>
-      <ul style={listStyles}>
-        <li style={docLinkStyle}>
-          <a
-            style={linkStyle}
-            href={`${docLink.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter`}
-          >
-            {docLink.text}
-          </a>
-        </li>
-        {links.map(link => (
-          <li key={link.url} style={{ ...listItemStyles, color: link.color }}>
-            <span>
-              <a
-                style={linkStyle}
-                href={`${link.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter`}
-              >
-                {link.text}
-              </a>
-              {link.badge && (
-                <span style={badgeStyle} aria-label="New Badge">
-                  NEW!
-                </span>
-              )}
-              <p style={descriptionStyle}>{link.description}</p>
-            </span>
-          </li>
-        ))}
-      </ul>
-      <img
-        alt="Gatsby G Logo"
-        src="data:image/svg+xml,%3Csvg width='24' height='24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 2a10 10 0 110 20 10 10 0 010-20zm0 2c-3.73 0-6.86 2.55-7.75 6L14 19.75c3.45-.89 6-4.02 6-7.75h-5.25v1.5h3.45a6.37 6.37 0 01-3.89 4.44L6.06 9.69C7 7.31 9.3 5.63 12 5.63c2.13 0 4 1.04 5.18 2.65l1.23-1.06A7.959 7.959 0 0012 4zm-8 8a8 8 0 008 8c.04 0 .09 0-8-8z' fill='%23639'/%3E%3C/svg%3E"
-      />
-    </main>
-  )
-}
+    <Layout>
+      <main>
+        <Helmet>
+          <title>La Chismosa FM</title>
+          <meta
+            name="description"
+            content="RADIO LA CHISMOSA FM es una radiodifusora de carácter informativo,
+                educativo, deportivo, intercultural, de opinión y de entretenimiento, que produce, transmite y promueve
+                una programación de calidad que contribuye a la construcción de la sociedad"
+          />
+          <meta property="og:title" content="RADIO LA CHISMOSA FM" />
+          <meta property="og:url" content="https://www.lachismosafm.ec/" />
+          <meta property="og:type" content="article" />
+          <meta
+            property="og:description"
+            content="RADIO LA CHISMOSA FM es una radiodifusora de carácter informativo,
+            educativo, deportivo, intercultural, de opinión y de entretenimiento, que produce, transmite y promueve
+            una programación de calidad que contribuye a la construcción de la sociedad"
+          />
 
-export default IndexPage
+          <meta
+            name="keywords"
+            content="la chismosa, podcast, fm, radio, frecuencias, ecuador"
+          />
+        </Helmet>
+        <Container fluid>
+          <Row>
+            <Col md={12} className="px-0 d-flex justify-content-center">
+              <Card className="bg-dark text-white rounded-0 border-0">
+                <StaticImage
+                  src="../images/inicio/lachismosa-banner.jpg"
+                  alt="Lachismosa"
+                  className="main-banner w-100 d-none d-sm-block"
+                />
+                <StaticImage
+                  src="../images/inicio/lachismosa-banner-sm.jpg"
+                  alt="Lachismosa"
+                  className="main-banner w-100 d-block d-sm-none"
+                />
+                <Card.ImgOverlay className="rounded-0 d-flex align-items-center p-0">
+                  <Container>
+                    <Row>
+                      <Col md={12}>
+                        <div className="content-banner-home">
+                          <StaticImage
+                            src="../images/assets/la-chismosa.png"
+                            alt="Lachismosa"
+                          />
+                          <p className="texto-banner-home">
+                            La primera visual <br /> radio del Ecuador.
+                          </p>
+                        </div>
+                      </Col>
+                    </Row>
+                  </Container>
+                </Card.ImgOverlay>
+              </Card>
+            </Col>
+          </Row>
+
+          <Row>
+            <Col md={12}>
+              <Container>
+                <Row className="d-flex justify-content-center mt-5 mb-4 pt-md-5">
+                  <Col md={8} className="text-center">
+                    <h1 className="titulo-lachismosa">La Chismosa FM</h1>
+                    <p className="texto-lachismosa mb-0 pt-2">
+                      RADIO LA CHISMOSA FM es una radiodifusora de carácter
+                      informativo, educativo, deportivo, intercultural, de
+                      opinión y de entretenimiento, que produce, transmite y
+                      promueve una programación de calidad que contribuye a la
+                      construcción de la sociedad.
+                    </p>
+                  </Col>
+                </Row>
+
+                <Row>
+                  <Row md={12} className="mt-md-3 px-0 pb-5 text-center">
+                    <h2 className="titulo-podcast d-flex align-items-center mb-3">
+                      ESCÚCHANOS
+                      <span className="titulo-envivo mx-2">
+                        EN VIVO <span> &#9679; </span>
+                      </span>
+                    </h2>
+                    <div className="ratio ratio-16x9">
+                      <iframe
+                        src="//www.alsolnet.com/stream/lachismosatv/player.htm"
+                        title="YouTube video"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
+                  </Row>
+                </Row>
+              </Container>
+            </Col>
+          </Row>
+        </Container>
+
+        <Container fluid className="background-2 px-0">
+          <Row>
+            <Col md={12}>
+              <Card className="text-white border-0 rounded-0">
+                <picture>
+                  <StaticImage
+                    src="../images/inicio/concursos/lachismosa-concursos.jpg"
+                    alt="Lachismosa"
+                    className="d-none d-sm-block"
+                  />
+                  <StaticImage
+                    src="../images/inicio/concursos/lachismosa-concursos-sm.jpg"
+                    alt="Lachismosa"
+                    className="d-block d-sm-none"
+                  />
+                </picture>
+                <Card.ImgOverlay className="rounded-0 d-flex align-items-center p-0">
+                  <Container>
+                    <Row className="d-flex justify-content-center">
+                      <Col md={9} className="text-center text-md-start">
+                        <Button
+                          variant="dark"
+                          className="btn-destacado mb-4 mb-md-5 px-md-4 pb-0"
+                        >
+                          Nuestros Concursos
+                          {/* <i className="bi bi-play-circle"></i> */}
+                        </Button>
+                      </Col>
+                    </Row>
+                    <Row className="cont-destacados d-flex justify-content-center">
+                      <Col xs={6} md={3} lg={3} className="pt-4">
+                        <Card className="card text-white border-0 card-rounded">
+                          <StaticImage
+                            src="../images/inicio/concursos/parlotrivia-deportiva.jpg"
+                            alt="Lachismosa"
+                          />
+                          <Card.ImgOverlay className="d-flex align-items-end justify-content-center">
+                            <h5 className="card-title text-center">
+                              Parlotrivia Deportiva
+                            </h5>
+                          </Card.ImgOverlay>
+                        </Card>
+                      </Col>
+                      <Col xs={6} md={3} lg={3} className="pt-4">
+                        <div className="card text-white border-0 card-rounded">
+                          <StaticImage
+                            src="../images/inicio/concursos/billeteate.jpg"
+                            alt="Lachismosa"
+                          />
+                          <div className="card-img-overlay d-flex align-items-end justify-content-center">
+                            <h5 className="card-title text-center">
+                              Paleta Regalona
+                            </h5>
+                          </div>
+                        </div>
+                      </Col>
+                      <Col xs={6} md={3} lg={3} className="pt-4">
+                        <div className="card text-white border-0 card-rounded">
+                          <StaticImage
+                            src="../images/inicio/concursos/capsula-regalona.jpg"
+                            alt="Lachismosa"
+                          />
+                          {/* <img src="images/concursos/capsula-regalona.jpg" className="card-img img-fluid card-rounded" alt="capsula regalona"> */}
+                          <div className="card-img-overlay d-flex align-items-end justify-content-center">
+                            <h5 className="card-title text-center">
+                              La Cápsula Regalona
+                            </h5>
+                          </div>
+                        </div>
+                      </Col>
+                    </Row>
+                  </Container>
+                </Card.ImgOverlay>
+              </Card>
+            </Col>
+          </Row>
+        </Container>
+
+        <Container className="mt-5">
+          <Row className="pb-5 d-flex justify-content-center">
+            <Col md={8}>
+              <a
+                className="twitter-timeline"
+                data-theme="light"
+                href="https://twitter.com/ChismosaFm?ref_src=twsrc%5Etfw"
+                data-tweet-limit="2"
+              >
+                Tweets by ChismosaFm
+              </a>
+              <script
+                async
+                src="https://platform.twitter.com/widgets.js"
+                charset="utf-8"
+              ></script>
+            </Col>
+          </Row>
+        </Container>
+      </main>
+    </Layout>
+  );
+};
+
+export default IndexPage;
