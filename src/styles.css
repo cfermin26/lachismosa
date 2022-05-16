@@ -120,6 +120,15 @@
   font-size: 21px;
 }
 
+.titulo-podcast {
+  font-size: 12px;
+  font-family: "ProximaNova-Bold";
+}
+
+.titulo-envivo {
+  color: #e4232d;
+}
+
 .background-2 {
   background-attachment: fixed;
   background-color: #000000;
@@ -182,7 +191,7 @@ footer {
 }
 
 .social-footer img {
-  width: 35px;
+  width: 30px;
 }
 
 .contacto-footer {
@@ -195,10 +204,12 @@ footer {
 .contacto-footer li {
   color: #ffffff;
   margin-top: 10px;
+  display: flex;
+  align-items: center;
 }
 
 .contacto-footer img {
-  width: 20px;
+  /* width: 25px; */
   margin-right: 10px;
 }
 
@@ -210,8 +221,12 @@ footer {
   padding-left: 0;
 }
 
+.contacto-info li {
+  display: inline-block;
+}
+
 .contacto-info img {
-  width: 20px;
+  /* width: 25px; */
   margin-right: 10px;
   filter: invert(100%);
   -webkit-filter: invert(100%);
@@ -230,7 +245,7 @@ footer {
 }
 
 .contacto-social img {
-  width: 40px;
+  width: 30px;
   margin-right: 10px;
   filter: invert(100%);
   -webkit-filter: invert(100%);
@@ -393,9 +408,9 @@ footer {
     margin-bottom: 0;
   }
 
-  .social-footer img {
+  /* .social-footer img {
     width: 35px;
-  }
+  } */
 
   .contacto-info {
     font-size: 14px;
@@ -444,7 +459,7 @@ footer {
   }
 
   .lista-carrera {
-    padding-left: 0;
+    padding-left: 10px;
   }
 
   .lista-carrera li {

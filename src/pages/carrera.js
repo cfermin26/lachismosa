@@ -212,9 +212,9 @@ const Carrera = () => {
           </Col>
         </Row>
 
-        <Row className="mt-3 mt-md-4">
+        <Row className="mt-3 mb-4 mt-md-4">
           <Col md={12} className="mt-4 mt-md-5 text-center">
-            <h2 className="titulo-carrera-md">
+            <h2 className="titulo-carrera-md ">
               Reglamento y condiciones generales
             </h2>
             <p className="texto-lachismosa mb-0 mt-4 mt-md-5">
@@ -362,12 +362,12 @@ const Carrera = () => {
         </Row>
 
         <Row className="mt-3 mt-md-4 d-flex justify-content-center">
-          <Col md={8} className="mt-4 mt-md-5 text-center">
-            <h2 className="titulo-carrera-md">Equipamento</h2>
-            <p className="texto-lachismosa mt-4 mt-md-5">
+          <Col md={8} className="mt-4 mt-md-5">
+            <h2 className="titulo-carrera-md text-center">Equipamento</h2>
+            <p className="texto-lachismosa mt-4 mt-md-5 text-center">
               Los participantes oficiales obligatoriamente deben portar:
             </p>
-            <p className="texto-lachismosa">
+            <p className="texto-lachismosa d-flex justify-content-center">
               <ol>
                 <li>Camiseta oficial de competencia.</li>
                 <li>Gorra oficial de la ChismoRuta 5k</li>

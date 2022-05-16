@@ -4,6 +4,8 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
 import { StaticImage } from "gatsby-plugin-image";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "../styles.css";
 
 const Menu = () => {
   return (
