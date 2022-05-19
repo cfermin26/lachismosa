@@ -316,6 +316,17 @@ footer {
   font-weight: 400;
 }
 
+.btn-enviar {
+  background-color: #d90203;
+  border-radius: 30px;
+  border: 0;
+  color: #ffffff;
+  font-family: "BalooBhainaOdia";
+  font-size: 21px;
+  font-weight: 400;
+  border-radius: 30px !important;
+}
+
 .titulo-premio {
   font-family: "ProximaNova-Bold";
   font-size: 24px;
