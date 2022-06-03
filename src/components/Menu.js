@@ -22,9 +22,6 @@ const Menu = () => {
             <Nav.Link as={Link} to="/" activeClassName="active">
               Inicio
             </Nav.Link>
-            <Nav.Link as={Link} to="/carrera" activeClassName="active">
-              Carrera
-            </Nav.Link>
             <Nav.Link as={Link} to="/programacion" activeClassName="active">
               Programación
             </Nav.Link>
