@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-// import { StaticImage } from "gatsby-plugin-image";
 import axios from "axios";
 import Spinner from "../components/spinner";
 import Swal from "sweetalert2";
@@ -283,14 +282,6 @@ const Formulario = () => {
                 </Col>
 
                 <Col md={12}>
-                  {/* <Button
-                    variant="light"
-                    type="submit"
-                    className="btn-enviar rounded-0 px-4 mt-4 w-100"
-                  >
-                    Comprar
-                  </Button> */}
-
                   {activeSpinner ? (
                     <Spinner className="mt-4" />
                   ) : (

@@ -30,5 +30,11 @@ module.exports = {
         defaultQuality: 100,
       },
     },
+    {
+      resolve: 'gatsby-plugin-html-attributes',
+      options: {
+        lang: 'es'
+      },
+    },
   ],
 };
