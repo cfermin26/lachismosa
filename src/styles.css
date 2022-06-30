@@ -138,8 +138,25 @@
   background-size: cover;
 }
 
+/* .card .cont-destacados {
+  border-radius: 20px;
+} */
+
+.card {
+  background-color: transparent;
+}
+
 .btn-destacado {
   background-color: #000000;
+  border-radius: 30px;
+  border: 0;
+  font-family: "BalooBhainaOdia";
+  font-size: 26px;
+  font-weight: 400;
+}
+
+.btn-descarga {
+  background-color: #db232b;
   border-radius: 30px;
   border: 0;
   font-family: "BalooBhainaOdia";
@@ -512,5 +529,13 @@ footer {
 
   .br-light {
     border-right: 0;
+  }
+
+  .btn-destacado {
+    font-size: 21px;
+  }
+
+  .btn-descarga {
+    font-size: 21px;
   }
 }

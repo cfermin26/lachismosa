@@ -68,7 +68,7 @@ const Footer = () => {
             <ul className="social-footer d-flex d-none d-sm-flex">
               <li>
                 <a
-                  href="https://www.facebook.com/SEMUVEX"
+                  href="https://www.facebook.com/lachismosafm"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -116,7 +116,7 @@ const Footer = () => {
             <ul className="social-footer d-flex d-block d-sm-none">
               <li>
                 <a
-                  href="https://www.facebook.com/SEMUVEX"
+                  href="https://www.facebook.com/lachismosafm"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

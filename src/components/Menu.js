@@ -31,6 +31,9 @@ const Menu = () => {
             <Nav.Link as={Link} to="/contacto" activeClassName="active">
               Cobertura y Contacto
             </Nav.Link>
+            <Nav.Link as={Link} to="/app" activeClassName="active">
+              App
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
