@@ -138,6 +138,10 @@
   background-size: cover;
 }
 
+.cont-progra img {
+  border-radius: 20px;
+}
+
 /* .card .cont-destacados {
   border-radius: 20px;
 } */

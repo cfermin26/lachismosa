@@ -82,7 +82,17 @@ const Contacto = () => {
 
           <Row>
             <Col md={8} className="mx-auto py-4 py-md-5">
-              <StaticImage src="../images/contacto/mapa.png" alt="Lachismosa" />
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15938.744478695624!2d-79.0038951!3d-2.9064272!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x735207dc0128e84a!2sRadio%20La%20Chismosa%20104.1%20FM!5e0!3m2!1ses-419!2sec!4v1656616397840!5m2!1ses-419!2sec"
+                width="100%"
+                height="500"
+                title="lachismosa"
+                /* style="border:0;" */
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+              {/* <StaticImage src="../images/contacto/mapa.png" alt="Lachismosa" /> */}
             </Col>
           </Row>
 

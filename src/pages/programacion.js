@@ -69,7 +69,7 @@ const Programacion = () => {
 
           <Row>
             <Col md={12}>
-              <Container>
+              <Container className="cont-progra">
                 <Row>
                   <Col
                     xs={6}
@@ -78,12 +78,11 @@ const Programacion = () => {
                     className="text-center mt-4 mt-md-5"
                   >
                     <StaticImage
-                      src="../images/programacion/programacion-1.png"
+                      src="../images/programacion/programacion-1.jpg"
                       alt="Lachismosa"
                     />
                     <h2 className="titulo-programacion mt-2 mt-md-3 px-3">
-                      Resumen de noticias nacionales e internacionales con
-                      entrevistas.
+                      Jammil Bustan, Tania Párraga, y Luis Mogrovejo.
                     </h2>
                     <div className="fecha-programacion mx-auto mt-2 mt-md-3">
                       <p className="dia-programacion">Lunes a Viernes</p>
@@ -97,18 +96,37 @@ const Programacion = () => {
                     className="text-center mt-4 mt-md-5"
                   >
                     <StaticImage
-                      src="../images/programacion/programacion-2.png"
+                      src="../images/programacion/programacion-2.jpg"
                       alt="Lachismosa"
                     />
                     <h2 className="titulo-programacion mt-2 mt-md-3 px-3">
-                      Entretenimiento radial, una programación fuera de lo
-                      normal.
+                      Jammil Bustan, Tania Párraga, y Luis Mogrovejo.
+                    </h2>
+                    <div className="fecha-programacion mx-auto mt-2 mt-md-3">
+                      <p className="dia-programacion">Lunes a Viernes</p>
+                      <p className="hora-programacion">de 07h00 a 09h00</p>
+                    </div>
+                  </Col>
+                  <Col
+                    xs={6}
+                    md={4}
+                    lg={3}
+                    className="text-center mt-4 mt-md-5"
+                  >
+                    <StaticImage
+                      src="../images/programacion/programacion-3.jpg"
+                      alt="Lachismosa"
+                    />
+                    <h2 className="titulo-programacion mt-2 mt-md-3 px-3">
+                      Alejandro Tigre, Amelia Pesantez, Mauri Garnica, Reily
+                      Sailema y Tres Patines.
                     </h2>
                     <div className="fecha-programacion mx-auto mt-2 mt-md-3">
                       <p className="dia-programacion">Lunes a Viernes</p>
                       <p className="hora-programacion">de 09h00 a 12h00</p>
                     </div>
                   </Col>
+
                   <Col
                     xs={6}
                     md={4}
@@ -116,19 +134,17 @@ const Programacion = () => {
                     className="text-center mt-4 mt-md-5"
                   >
                     <StaticImage
-                      src="../images/programacion/programacion-3.png"
+                      src="../images/programacion/programacion-4.jpg"
                       alt="Lachismosa"
                     />
                     <h2 className="titulo-programacion mt-2 mt-md-3 px-3">
-                      La música que tanto te gusta, entretenimiento, información
-                      y mucho más.
+                      Giorgio Gallegos, Bebeto Dj.
                     </h2>
                     <div className="fecha-programacion mx-auto mt-2 mt-md-3">
                       <p className="dia-programacion">Lunes a Viernes</p>
                       <p className="hora-programacion">de 12h00 a 15h00</p>
                     </div>
                   </Col>
-
                   <Col
                     xs={6}
                     md={4}
@@ -136,56 +152,35 @@ const Programacion = () => {
                     className="text-center mt-4 mt-md-5"
                   >
                     <StaticImage
-                      src="../images/programacion/programacion-4.png"
+                      src="../images/programacion/programacion-5.jpg"
                       alt="Lachismosa"
                     />
                     <h2 className="titulo-programacion mt-2 mt-md-3 px-3">
-                      Música tropical/variada e interacción en las redes
-                      sociales.
-                    </h2>
-                    <div className="fecha-programacion mx-auto mt-2 mt-md-3">
-                      <p className="dia-programacion">Lunes a Viernes</p>
-                      <p className="hora-programacion">de 15h00 a 18h00</p>
-                    </div>
-                  </Col>
-                  <Col
-                    xs={6}
-                    md={4}
-                    lg={3}
-                    className="text-center mt-4 mt-md-5"
-                  >
-                    <StaticImage
-                      src="../images/programacion/programacion-5.png"
-                      alt="Lachismosa"
-                    />
-                    <h2 className="titulo-programacion mt-2 mt-md-3 px-3">
-                      Interacción contínua acompañada con música clásica y
-                      actual.
-                    </h2>
-                    <div className="fecha-programacion mx-auto mt-2 mt-md-3">
-                      <p className="dia-programacion">Lunes a Viernes</p>
-                      <p className="hora-programacion">de 18h00 a 20h00</p>
-                    </div>
-                  </Col>
-                  <Col
-                    xs={6}
-                    md={4}
-                    lg={3}
-                    className="text-center mt-4 mt-md-5"
-                  >
-                    <StaticImage
-                      src="../images/programacion/programacion-6.png"
-                      alt="Lachismosa"
-                    />
-                    <h2 className="titulo-programacion mt-2 mt-md-3 px-3">
-                      Noticias deportivas que hacen de la jornada es de interés
-                      de la fanaticada nacional.
+                      JC El Pantera, Lina Álvarez, Israel Villamar DJ Casado.
                     </h2>
                     <div className="fecha-programacion mx-auto mt-2 mt-md-3">
                       <p className="dia-programacion">Lunes a Viernes</p>
                       <p className="hora-programacion">de 20h00 a 21h00</p>
                     </div>
                   </Col>
+                  <Col
+                    xs={6}
+                    md={4}
+                    lg={3}
+                    className="text-center mt-4 mt-md-5"
+                  >
+                    <StaticImage
+                      src="../images/programacion/programacion-6.jpg"
+                      alt="Lachismosa"
+                    />
+                    <h2 className="titulo-programacion mt-2 mt-md-3 px-3">
+                      Chino Mejía.
+                    </h2>
+                    <div className="fecha-programacion mx-auto mt-2 mt-md-3">
+                      <p className="dia-programacion">Lunes a Viernes</p>
+                      <p className="hora-programacion">de 18h00 a 20h00</p>
+                    </div>
+                  </Col>
 
                   <Col
                     xs={6}
@@ -194,16 +189,15 @@ const Programacion = () => {
                     className="text-center mt-4 mt-md-5"
                   >
                     <StaticImage
-                      src="../images/programacion/programacion-7.png"
+                      src="../images/programacion/programacion-7.jpg"
                       alt="Lachismosa"
                     />
                     <h2 className="titulo-programacion mt-2 mt-md-3 px-3">
-                      Canciones con historia propia, porque la música no tiene
-                      años.
+                      Cristian Pantosini, Miguel Gutiérrez, Juan Diego Picon.
                     </h2>
                     <div className="fecha-programacion mx-auto mt-2 mt-md-3">
                       <p className="dia-programacion">Lunes a Viernes</p>
-                      <p className="hora-programacion">de 21h00 a 23h00</p>
+                      <p className="hora-programacion">de 20h00 a 21h00</p>
                     </div>
                   </Col>
                   <Col
@@ -213,15 +207,15 @@ const Programacion = () => {
                     className="text-center mt-4 mt-md-5"
                   >
                     <StaticImage
-                      src="../images/programacion/programacion-8.png"
+                      src="../images/programacion/programacion-8.jpg"
                       alt="Lachismosa"
                     />
                     <h2 className="titulo-programacion mt-2 mt-md-3 px-3">
-                      Fines de semana con el mejor acompañamiento.
+                      Djs Chismosos.
                     </h2>
                     <div className="fecha-programacion mx-auto mt-2 mt-md-3">
-                      <p className="dia-programacion">Sábados</p>
-                      <p className="hora-programacion">de 14h00 a 17h00</p>
+                      <p className="dia-programacion">Viernes</p>
+                      <p className="hora-programacion">de 21h00 a 00h00</p>
                     </div>
                   </Col>
                   <Col
@@ -231,14 +225,32 @@ const Programacion = () => {
                     className="text-center mt-4 mt-md-5"
                   >
                     <StaticImage
-                      src="../images/programacion/programacion-9.png"
+                      src="../images/programacion/programacion-9.jpg"
                       alt="Lachismosa"
                     />
                     <h2 className="titulo-programacion mt-2 mt-md-3 px-3">
-                      Sintonía al máximo acompañada de una programación de lujo.
+                      El Cuervo.
                     </h2>
                     <div className="fecha-programacion mx-auto mt-2 mt-md-3">
-                      <p className="dia-programacion">Sábados</p>
+                      <p className="dia-programacion">Sábado</p>
+                      <p className="hora-programacion">de 07h00 a 11h00</p>
+                    </div>
+                  </Col>
+                  <Col
+                    xs={6}
+                    md={4}
+                    lg={3}
+                    className="text-center mt-4 mt-md-5"
+                  >
+                    <StaticImage
+                      src="../images/programacion/programacion-10.jpg"
+                      alt="Lachismosa"
+                    />
+                    <h2 className="titulo-programacion mt-2 mt-md-3 px-3">
+                      Oscar Marcelo.
+                    </h2>
+                    <div className="fecha-programacion mx-auto mt-2 mt-md-3">
+                      <p className="dia-programacion">Sábado</p>
                       <p className="hora-programacion">de 11h00 a 14h00</p>
                     </div>
                   </Col>
@@ -249,16 +261,50 @@ const Programacion = () => {
                     className="text-center mt-4 mt-md-5"
                   >
                     <StaticImage
-                      src="../images/programacion/programacion-10.png"
+                      src="../images/programacion/programacion-11.jpg"
                       alt="Lachismosa"
                     />
                     <h2 className="titulo-programacion mt-2 mt-md-3 px-3">
-                      Lo más destacado de la música disco, un viaje a los 70's y
-                      80's.
+                      Juan Morales, El Mono Serrano.
                     </h2>
                     <div className="fecha-programacion mx-auto mt-2 mt-md-3">
                       <p className="dia-programacion">Jueves</p>
-                      <p className="hora-programacion">de 07h00 a 11h00</p>
+                      <p className="hora-programacion">de 14h00 a 17h00</p>
+                    </div>
+                  </Col>
+                  <Col
+                    xs={6}
+                    md={4}
+                    lg={3}
+                    className="text-center mt-4 mt-md-5"
+                  >
+                    <StaticImage
+                      src="../images/programacion/programacion-12.jpg"
+                      alt="Lachismosa"
+                    />
+                    <h2 className="titulo-programacion mt-2 mt-md-3 px-3">
+                      Nene Mike
+                    </h2>
+                    <div className="fecha-programacion mx-auto mt-2 mt-md-3">
+                      <p className="dia-programacion">Sábado</p>
+                      <p className="hora-programacion">de 17h00 a 20h00</p>
+                    </div>
+                  </Col>
+                  <Col
+                    xs={6}
+                    md={4}
+                    lg={3}
+                    className="text-center mt-4 mt-md-5"
+                  >
+                    <StaticImage
+                      src="../images/programacion/programacion-13.jpg"
+                      alt="Lachismosa"
+                    />
+                    <h2 className="titulo-programacion mt-2 mt-md-3 px-3">
+                      Djs de la Chismosa
+                    </h2>
+                    <div className="fecha-programacion mx-auto mt-2 mt-md-3">
+                      <p className="dia-programacion">Domingo</p>
                     </div>
                   </Col>
                 </Row>
