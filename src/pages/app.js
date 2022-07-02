@@ -1,6 +1,7 @@
 import * as React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 import Layout from "../components/Layout";
+import ReactPlayer from "react-player";
 import Helmet from "react-helmet";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -86,9 +87,11 @@ const App = () => {
                 </Row>
                 <Row className="d-flex justify-content-center mt-5 mb-4 pt-md-4">
                   <Col md={8} className="text-center">
-                    <StaticImage
-                      src="../images/app/app-video.png"
-                      alt="Lachismosa"
+                    <ReactPlayer
+                      width="100%"
+                      height="100%"
+                      url="https://www.facebook.com/watch/?v=532963767746294"
+                      controls
                     />
                   </Col>
                 </Row>
